@@ -21,6 +21,7 @@ public:
     void setReusePort(bool on);
     void setKeepAlive(bool on);
 
+    void close(int fd);
     bool connect(const std::string& ip, uint16_t port, int timeout);
 
     std::string getPeerIp(int sockfd);
